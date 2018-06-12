@@ -144,6 +144,9 @@ start_nginx() {
 # 
 #################
 main() {
+    echo "Sleeping for 2 minutes to avoid services not being up"
+    sleep 12000
+
     # Initialize
     initialize_variables
 
